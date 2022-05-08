@@ -518,6 +518,7 @@
             this.PKbtn.TabIndex = 54;
             this.PKbtn.Text = "Penalty Kill";
             this.PKbtn.UseVisualStyleBackColor = true;
+            this.PKbtn.Click += new System.EventHandler(this.PKbtn_Click);
             // 
             // FoTbtn
             // 
@@ -528,6 +529,7 @@
             this.FoTbtn.TabIndex = 55;
             this.FoTbtn.Text = "4v4 | 3v3";
             this.FoTbtn.UseVisualStyleBackColor = true;
+            this.FoTbtn.Click += new System.EventHandler(this.FoTbtn_Click);
             // 
             // SOEAbtn
             // 
@@ -538,6 +540,7 @@
             this.SOEAbtn.TabIndex = 56;
             this.SOEAbtn.Text = "SO | EA";
             this.SOEAbtn.UseVisualStyleBackColor = true;
+            this.SOEAbtn.Click += new System.EventHandler(this.SOEAbtn_Click);
             // 
             // AHLbtn
             // 
@@ -548,6 +551,7 @@
             this.AHLbtn.TabIndex = 57;
             this.AHLbtn.Text = "AHL Team";
             this.AHLbtn.UseVisualStyleBackColor = true;
+            this.AHLbtn.Click += new System.EventHandler(this.AHLbtn_Click);
             // 
             // Addbtn
             // 
@@ -558,6 +562,7 @@
             this.Addbtn.TabIndex = 61;
             this.Addbtn.Text = "Add Lines";
             this.Addbtn.UseVisualStyleBackColor = true;
+            this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
             // 
             // Savebtn
             // 
@@ -568,6 +573,7 @@
             this.Savebtn.TabIndex = 60;
             this.Savebtn.Text = "Save Lines";
             this.Savebtn.UseVisualStyleBackColor = true;
+            this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click);
             // 
             // Loadbtn
             // 
@@ -578,6 +584,7 @@
             this.Loadbtn.TabIndex = 59;
             this.Loadbtn.Text = "Load Lines";
             this.Loadbtn.UseVisualStyleBackColor = true;
+            this.Loadbtn.Click += new System.EventHandler(this.Loadbtn_Click);
             // 
             // Clearbtn
             // 
@@ -588,6 +595,7 @@
             this.Clearbtn.TabIndex = 58;
             this.Clearbtn.Text = "Clear Lines";
             this.Clearbtn.UseVisualStyleBackColor = true;
+            this.Clearbtn.Click += new System.EventHandler(this.Clearbtn_Click);
             // 
             // listView1
             // 
