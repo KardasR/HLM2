@@ -37,7 +37,7 @@ namespace HLM2
 
         private void NewLinesBtn_Click(object sender, EventArgs e)
         {
-            EvenStrength evenStrength = new EvenStrength();
+            EvenStrength evenStrength = new EvenStrength(true);
             evenStrength.Show();
         }
     }

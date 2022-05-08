@@ -12,7 +12,7 @@ namespace HLM2
 {
     public partial class EvenStrength : Form
     {
-        public EvenStrength()
+        public EvenStrength(bool newteam)
         {
             InitializeComponent();
         }

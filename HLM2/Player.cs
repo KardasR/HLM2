@@ -8,8 +8,8 @@ namespace HLM2
 {
     internal class Player
     {
-        public string? Name { get; set; }       // Nullable because boxes can be blank
         public int Id { get; set; }
+        public string? Name { get; set; }       // Nullable because boxes can be blank
         public int Overall { get; set; }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.LW1 = new System.Windows.Forms.TextBox();
             this.LW2 = new System.Windows.Forms.TextBox();
             this.LW3 = new System.Windows.Forms.TextBox();
@@ -93,6 +94,8 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.Years = new System.Windows.Forms.ColumnHeader();
             this.LineNametxt = new System.Windows.Forms.TextBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // LW1
@@ -675,6 +678,7 @@
             this.Controls.Add(this.LW1);
             this.Name = "EvenStrength";
             this.Text = "EvenStrength";
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -747,5 +751,6 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader Years;
         private System.Windows.Forms.TextBox LineNametxt;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
