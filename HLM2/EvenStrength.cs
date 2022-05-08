@@ -50,7 +50,69 @@ namespace HLM2
 
         private void Clearbtn_Click(object sender, EventArgs e)
         {
+            // Clear Left Wings
+            LW1.Text = string.Empty;
+            LWOvr1.Text = string.Empty;
+            LW2.Text = string.Empty;
+            LWOvr2.Text = string.Empty;
+            LW3.Text = string.Empty;
+            LWOvr3.Text = string.Empty;
+            LW4.Text = string.Empty;
+            LWOvr4.Text = string.Empty;
+            LW5.Text = string.Empty;
+            LWOvr5.Text = string.Empty;
 
+            // Clear Centers
+            C1.Text = string.Empty;
+            COvr1.Text = string.Empty;
+            C2.Text = string.Empty;
+            COvr2.Text = string.Empty;
+            C3.Text = string.Empty;
+            COvr3.Text = string.Empty;
+            C4.Text = string.Empty;
+            COvr4.Text = string.Empty;
+            C5.Text = string.Empty;
+            COvr5.Text = string.Empty;
+
+            // Clear Right Wings
+            RW1.Text = string.Empty;
+            RWOvr1.Text = string.Empty;
+            RW2.Text = string.Empty;
+            RWOvr2.Text = string.Empty;
+            RW3.Text = string.Empty;
+            RWOvr3.Text = string.Empty;
+            RW4.Text = string.Empty;
+            RWOvr4.Text = string.Empty;
+            RW5.Text = string.Empty;
+            RWOvr5.Text = string.Empty;
+
+            // Clear Left Defenceman
+            LD1.Text = string.Empty;
+            LDOvr1.Text = string.Empty;
+            LD2.Text = string.Empty;
+            LDOvr2.Text = string.Empty;
+            LD3.Text = string.Empty;
+            LDOvr3.Text = string.Empty;
+            LD4.Text = string.Empty;
+            LDOvr4.Text = string.Empty;
+
+            // Clear Right Defenceman
+            RD1.Text = string.Empty;
+            RDOvr1.Text = string.Empty;
+            RD2.Text = string.Empty;
+            RDOvr2.Text = string.Empty;
+            RD3.Text = string.Empty;
+            RDOvr3.Text = string.Empty;
+            RD4.Text = string.Empty;
+            RDOvr4.Text = string.Empty;
+
+            // Clear Goalies
+            G1.Text = string.Empty;
+            GOvr1.Text = string.Empty;
+            G2.Text = string.Empty;
+            GOvr2.Text = string.Empty;
+            G3.Text = string.Empty;
+            GOvr3.Text = string.Empty;
         }
 
         private void Loadbtn_Click(object sender, EventArgs e)
