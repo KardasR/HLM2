@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+
 namespace HLM2
 {
     public partial class MainMenu : Form
@@ -20,7 +21,6 @@ namespace HLM2
 
         private void LoadLinesBtn_Click(object sender, EventArgs e)
         {
-            var fileContent = string.Empty;
             string filePath = string.Empty;
 
             using (openFileDialog1)
@@ -28,16 +28,16 @@ namespace HLM2
                 if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     filePath = openFileDialog1.FileName;
-                    Stream fileStream = openFileDialog1.OpenFile();
 
-                    // fileContent = ???
+                    EvenStrength evenStrength = new EvenStrength(filePath);
+                    evenStrength.Show();
                 }
             }
         }
 
         private void NewLinesBtn_Click(object sender, EventArgs e)
         {
-            EvenStrength evenStrength = new EvenStrength(true);
+            EvenStrength evenStrength = new EvenStrength(string.Empty);
             evenStrength.Show();
         }
     }

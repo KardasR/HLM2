@@ -7,14 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.Sqlite;
 
 namespace HLM2
 {
     public partial class EvenStrength : Form
     {
-        public EvenStrength(bool newteam)
+        // Setup DB connection
+        SqliteConnectionStringBuilder connectionStringBuilder = new SqliteConnectionStringBuilder();
+
+        public EvenStrength(string filePath)
         {
             InitializeComponent();
+
+            if (!filePath.Equals(string.Empty))
+            {
+                // Setup DB connection
+                connectionStringBuilder = new SqliteConnectionStringBuilder();
+
+                // Use selected DB
+                connectionStringBuilder.DataSource = filePath;
+
+                using (var connection = new SqliteConnection(connectionStringBuilder.ConnectionString))
+                {
+                    connection.Open();
+
+                    // Load the data from the DB
+                    var selectCMD = connection.CreateCommand();
+
+                    selectCMD.CommandText = "SELECT ??? FROM ???";
+                    //selectCMD.ExecuteNonQuery();
+                }
+
+                // Also populate the listbox please
+            }
         }
 
         private void PPbtn_Click(object sender, EventArgs e)
@@ -122,12 +148,15 @@ namespace HLM2
 
         private void Savebtn_Click(object sender, EventArgs e)
         {
+            if (connectionStringBuilder.DataSource != null)
+            {
 
+            }
         }
 
         private void Addbtn_Click(object sender, EventArgs e)
         {
-
+            //TeamYearlb.Items.Add()
         }
     }
 }

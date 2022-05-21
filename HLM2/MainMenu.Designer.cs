@@ -32,6 +32,7 @@
             this.MainMenuTitle = new System.Windows.Forms.Label();
             this.LoadLinesBtn = new System.Windows.Forms.Button();
             this.NewLinesBtn = new System.Windows.Forms.Button();
+            this.sqliteConnection1 = new Microsoft.Data.Sqlite.SqliteConnection();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -70,6 +71,10 @@
             this.NewLinesBtn.UseVisualStyleBackColor = true;
             this.NewLinesBtn.Click += new System.EventHandler(this.NewLinesBtn_Click);
             // 
+            // sqliteConnection1
+            // 
+            this.sqliteConnection1.DefaultTimeout = 30;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -91,5 +96,6 @@
         private System.Windows.Forms.Label MainMenuTitle;
         private System.Windows.Forms.Button LoadLinesBtn;
         private System.Windows.Forms.Button NewLinesBtn;
+        private Microsoft.Data.Sqlite.SqliteConnection sqliteConnection1;
     }
 }

@@ -91,10 +91,9 @@
             this.Savebtn = new System.Windows.Forms.Button();
             this.Loadbtn = new System.Windows.Forms.Button();
             this.Clearbtn = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.TeamYearlb = new System.Windows.Forms.ListView();
             this.Years = new System.Windows.Forms.ColumnHeader();
-            this.LineNametxt = new System.Windows.Forms.TextBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.LinesNametxt = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -104,6 +103,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -606,23 +606,23 @@
             this.Clearbtn.UseVisualStyleBackColor = true;
             this.Clearbtn.Click += new System.EventHandler(this.Clearbtn_Click);
             // 
-            // listView1
+            // TeamYearlb
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.TeamYearlb.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Years});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(666, 624);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(121, 97);
-            this.listView1.TabIndex = 62;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.TeamYearlb.HideSelection = false;
+            this.TeamYearlb.Location = new System.Drawing.Point(666, 624);
+            this.TeamYearlb.Name = "TeamYearlb";
+            this.TeamYearlb.Size = new System.Drawing.Size(121, 97);
+            this.TeamYearlb.TabIndex = 62;
+            this.TeamYearlb.UseCompatibleStateImageBehavior = false;
             // 
-            // LineNametxt
+            // LinesNametxt
             // 
-            this.LineNametxt.Location = new System.Drawing.Point(664, 595);
-            this.LineNametxt.Name = "LineNametxt";
-            this.LineNametxt.Size = new System.Drawing.Size(123, 23);
-            this.LineNametxt.TabIndex = 63;
+            this.LinesNametxt.Location = new System.Drawing.Point(664, 595);
+            this.LinesNametxt.Name = "LinesNametxt";
+            this.LinesNametxt.Size = new System.Drawing.Size(123, 23);
+            this.LinesNametxt.TabIndex = 63;
             // 
             // textBox1
             // 
@@ -710,8 +710,8 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.LineNametxt);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.LinesNametxt);
+            this.Controls.Add(this.TeamYearlb);
             this.Controls.Add(this.Addbtn);
             this.Controls.Add(this.Savebtn);
             this.Controls.Add(this.Loadbtn);
@@ -846,10 +846,9 @@
         private System.Windows.Forms.Button Savebtn;
         private System.Windows.Forms.Button Loadbtn;
         private System.Windows.Forms.Button Clearbtn;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView TeamYearlb;
         private System.Windows.Forms.ColumnHeader Years;
-        private System.Windows.Forms.TextBox LineNametxt;
-        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.TextBox LinesNametxt;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -859,5 +858,6 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
